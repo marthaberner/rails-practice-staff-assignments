@@ -21,4 +21,7 @@ class PeopleController < ApplicationController
     @person = Person.find_by(id: params[:id])
   end
 
+  def edit
+    @person = Person.find_by(id: params[:id])
+  end
 end
